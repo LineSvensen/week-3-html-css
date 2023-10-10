@@ -1,0 +1,101 @@
+/* Universal selector ( * ) */
+* {
+    color: red;
+    font-size: 28px;
+}
+
+/* Tag selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.highlight {
+    color: green;
+}
+
+/* id selector. when selecting id we use ( # ) */
+#header {
+    background-color: yellow;
+}
+
+/* Decendant selector /*
+
+ */
+article p {
+    color: deeppink;
+}
+
+article h2 {
+    color: darkorange;
+}
+
+/*child selector (parent > child) */
+ul > li {
+    list-style-type: square;
+}
+
+/*general sibling selector. will choose another sibling, not the first one. need to be over the normal sibling selector*/
+h2 ~ p {
+    background-color: brown;
+}
+
+/*sibling selector*/
+h2 + p {
+    background-color: aqua;
+}
+
+/*psuedo-classes selector*/
+a:hover {
+    background-color: yellow;
+}
+/*Pseudo-class*/
+ul li:first-child {
+    background-color: cadetblue;
+}
+
+/*Pseudo-class*/
+ul li:last-child {
+    background-color: mediumpurple;
+}
+
+/*Pseudo-class*/
+ul li:nth-child(2) {
+    background-color: orangered;
+    color: white;
+}
+
+input[type="text"] {
+    color: black;
+    font-size: 18px;
+    border-color: blueviolet;
+}
+
+input[type="submit"] {
+    color: white;
+    font-size: 18px;
+    border-color: lightpink;
+    background-color: darkorange;
+    border-radius: 8px;
+    padding: 8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+p::before {
+    content: "😍";
+    font-size: 20px;
+}
+
+p::after {
+    content: "🔥yeahh";
+}
+
+/*grouping selector*/
+h1, h2, p {
+    font-family: "Comic Sans MS", sans-serif;
+}
+/*combining selector*/
+p.dummy::first-letter {
+    font-size: 48px;
+    initial-letter: 6 10;
+}
